@@ -31,9 +31,9 @@ class App extends Component {
     const { data, country } = this.state;
      return (
       <div>
-        <Cards data={data}></Cards>
+         <Cards data={data}></Cards>
+         <CountryPicker  country= {country} handleCountryChange={this.handleCountryChange}/>        
         <Charts data={data} country={country}></Charts>
-        <CountryPicker  country= {country} handleCountryChange={this.handleCountryChange}/>        
       </div>
     )
   }
